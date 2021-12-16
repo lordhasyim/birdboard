@@ -27,4 +27,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function projects()
+    {
+        // by default laravel will use 'user_id'
+        // in case ther is naming convention we override to 'owner_id'
+        // 
+        return $this->hasMany(Project::class, 'owner_id');
+    }
 }
