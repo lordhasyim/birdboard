@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
     <div id="app">
@@ -25,7 +26,11 @@
             <div class="container mx-auto">
                 <div class="flex justify-between items-center py-2">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <h1>
+
+                            <img src="/images/birdcheck.png" alt="birdlogo">
+                            {{ config('app.name', 'Laravel') }}
+                        </h1>
                     </a>
 
                     <div>

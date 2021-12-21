@@ -1,3 +1,9 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 // Variables
 @import 'variables';
 
@@ -8,7 +14,13 @@
 //   background-color: #fff;
 //   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 // }
+// .button {
+//     @apply .bg-button .no-underline .rounded-lg .text-sm .py-2 .px-5;
+//     color: white;
+// }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.button{
+    background-color: #42cdff;
+    box-shadow: 0 2px 7px 0 #b0eaff;
+    border-radius: 8px;
+}
