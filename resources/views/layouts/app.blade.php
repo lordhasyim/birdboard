@@ -20,12 +20,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-grey-light">
     <div id="app">
         <nav class="bg-white">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center py-2">
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand text-black no-underline" href="{{ url('/') }}">
                         <h1>
 
                             <img src="/images/birdcheck.png" alt="birdlogo">
@@ -39,11 +39,13 @@
                             <!-- Authentication Links -->
                             @guest
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="text-accent mr-4 no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}
+                                    </a>
                                 </li>
                                 @if (Route::has('register'))
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                        <a class="text-accent no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}
+                                        </a>
                                     </li>
                                 @endif
                             @else
